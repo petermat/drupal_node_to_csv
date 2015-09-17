@@ -1,4 +1,4 @@
-# drupal_node_to_csv
+# Drupal7 batch processing nodes to csv
 Simple python 3 script Iterate Drupal nodes and save content to csv and save photos from nodes to same folder
 
 Script grabs content of div elements. you can add more elements or edit these ones:
