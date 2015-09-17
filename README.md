@@ -31,12 +31,12 @@ Script grabs content of div elements. you can add more elements or edit these on
 
 1.**Install BS4 with pip3:**
 
-`sudo pip3 install -U beautifulsoup4`
+  `sudo pip3 install -U beautifulsoup4`
 
 
 2.**Install Requests with pip3:**
 
-`sudo pip3 install -U requests`
+  `sudo pip3 install -U requests`
 
 
 
