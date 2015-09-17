@@ -5,8 +5,14 @@ Simple python 3 script Iterate Drupal nodes and save content to csv and save pho
 
 ##Requirements:
 
-1.**Install BS4 with pip3:** sudo pip3 install -U beautifulsoup4
-2.**Install Requests with pip3:** sudo pip3 install -U requests
+1.**Install BS4 with pip3:**
+
+`sudo pip3 install -U beautifulsoup4`
+
+
+2.**Install Requests with pip3:**
+
+`sudo pip3 install -U requests`
 
 
 
@@ -16,14 +22,13 @@ Simple python 3 script Iterate Drupal nodes and save content to csv and save pho
 1. **Save main.py to folder**, rename it if you want
 2. **Change variables in source code:**
 
-`dp_url = "***http://yourURL.com/***" #set url, https not tested`
+  `dp_url = "***http://yourURL.com/***" #set url, https not tested`
 
-`dp_node_start = **1** #first node in drupal iteration`
+  `dp_node_start = **1** #first node in drupal iteration`
 
-`dp_node_end = **3010** #last node in drupal iteration`
+  `dp_node_end = **3010** #last node in drupal iteration`
 
-
-
-3. **Start script**:
+3. **Run script**:
+  
   `python3 main.py`
 
