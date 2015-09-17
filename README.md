@@ -1,18 +1,42 @@
 # drupal_node_to_csv
 Simple python 3 script Iterate Drupal nodes and save content to csv and save photos from nodes to same folder
 
+Script grabs content of div elements. you can add more elements or edit these ones:
+
+- Variable submitted grabs div or author and published date. Unix timestamp is derived from published date to get universal time.
+  
+  `submitted = checksoup.find('div', class_='submitted').text.replace("\n", "")`
+
+  `autor = submitted.split(",")[0]`
+
+  `date = ",".join(submitted.split(",")[1:])`
+
+  `date_unixtimestamp = datetime.strptime(date, '%B %d, %Y')`
+
+  `date_unixtimestamp = date_unixtimestamp.strftime('%s')`
+- Taxonomy variable drom taxonomy div      
+
+  `taxonomy = checksoup.find('div', class_='taxonomy')`
+
+- Main content div
+
+  `content = checksoup.find('div', class_='content')`
+
+- Images find all images in main content
+
+  `images = checksoup.find('div', class_='content').findAll('img')`
 
 
 ##Requirements:
 
 1.**Install BS4 with pip3:**
 
-`sudo pip3 install -U beautifulsoup4`
+  `sudo pip3 install -U beautifulsoup4`
 
 
 2.**Install Requests with pip3:**
 
-`sudo pip3 install -U requests`
+  `sudo pip3 install -U requests`
 
 
 
